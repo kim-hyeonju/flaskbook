@@ -11,7 +11,7 @@ auth = Blueprint(
     static_folder="static"
 )
 
-@auth.route("/signup", methods=["GET", "POST"])
+@auth.route("/signup", methods=["GET", "POST"])         #API 만드는 중
 def signup():
     form = SignUpForm()
     if form.validate_on_submit():
